@@ -4,7 +4,6 @@ import  java.awt.*;
 import  java.awt.event.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -12,12 +11,12 @@ import java.awt.event.KeyListener;
 
 public class Ball {
     private Frame frame=new Frame("made by tutu");
-    private  final int TABLE_WIDTH=400;
+    private final int TABLE_WIDTH=400;
     private final int TABLE_HEIGHT=400;
     private final int RACKET_WIDTH=50;
 
     private final int RACKET_HEIGHT=50;
-    private  final int BALL_SIZE=16;
+    private final int BALL_SIZE=16;
     private int BX=200;
     private int BY=5;
     private int speedy=20;
@@ -27,7 +26,7 @@ public class Ball {
     private boolean Over=false;
     private Timer timer;
     private class Canvas1 extends Canvas{
-        public  void paint(Graphics g)
+        public void paint(Graphics g)
         {
             if(Over){
                 g.setColor(Color.PINK);
